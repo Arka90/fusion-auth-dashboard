@@ -8,7 +8,8 @@
   --error-background: #ffe8e8;
   --border-color: #dddddd;
   --logo-url: url(https://fusionauth.io/assets/img/samplethemes/changebank/changebank.svg);
-  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 body {
   font-family: var(--font-stack);
@@ -18,7 +19,7 @@ body {
   line-height: normal;
 }
 .page-body:before {
-  content: '';
+  content: "";
   display: block;
   width: 80%;
   max-width: 20rem;
@@ -32,7 +33,9 @@ body {
 
 /* Changes for Powered by FusionAuth div */
 body > main main.page-body {
-  min-height: calc(100vh - 3rem); /* to make the Powered by FusionAuth div position at the bottom of the page if the page is shorter than the viewport */
+  min-height: calc(
+    100vh - 3rem
+  ); /* to make the Powered by FusionAuth div position at the bottom of the page if the page is shorter than the viewport */
   padding-top: 5rem;
 }
 body > main {
@@ -42,7 +45,6 @@ body > main {
   position: absolute !important;
 }
 /* End Powered by FusionAuth */
-
 
 /* Uncomment following to hide help bar at top */
 /*
@@ -55,9 +57,13 @@ body > main header.app-header {
 */
 /* end help bar */
 
-
 /* Typical typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: normal;
 }
 p {
@@ -66,7 +72,6 @@ p {
 }
 /* End typography */
 
-
 /* Typical Buttons and Links */
 a {
   color: var(--main-accent-color);
@@ -74,7 +79,7 @@ a {
 }
 a:hover {
   color: var(--main-accent-color);
-  opacity: .8;
+  opacity: 0.8;
 }
 a:visited {
   color: var(--main-accent-color);
@@ -87,7 +92,7 @@ a:visited {
 }
 .button {
   font-size: 1.125rem !important;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem !important;
   line-height: normal !important;
   letter-spacing: normal !important;
@@ -98,12 +103,13 @@ a:visited {
   margin-top: 2.5rem;
 }
 .button.blue:hover {
-  opacity: .8 !important;
+  opacity: 0.8 !important;
   background: var(--main-accent-color) !important;
 }
 .button.blue:focus {
   background: var(--main-accent-color) !important;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.4),0 0 0 2px rgba(57,152,219,0.4);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4),
+    0 0 0 2px rgba(57, 152, 219, 0.4);
   outline: 1px solid #ffffff !important;
 }
 .button.blue > .fa {
@@ -112,11 +118,11 @@ a:visited {
 .secondary-btn,
 main.page-body .row:last-of-type a {
   text-decoration: none;
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   border: 1px solid var(--main-accent-color);
-  border-radius: .25em;
-  font-size: .75rem;
-  margin-top: .7rem;
+  border-radius: 0.25em;
+  font-size: 0.75rem;
+  margin-top: 0.7rem;
   display: inline-block;
   line-height: normal;
 }
@@ -127,11 +133,10 @@ main.page-body .row:last-of-type a {
 }
 /* End buttons and links */
 
-
 /* Typical Form panel and inputs */
 .panel {
   box-shadow: 0 0 1.5625rem 1.25rem rgba(234, 234, 234, 0.8);
-  border-radius: .625rem;
+  border-radius: 0.625rem;
   border: none;
   padding: 2.25rem 2.75rem;
 }
@@ -185,14 +190,13 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea,
-label.select select
- {
+label.select select {
   background: var(--input-background);
   border: 1px solid var(--border-color) !important;
-  border-radius: .25rem !important;
+  border-radius: 0.25rem !important;
   box-shadow: none;
   font-size: 1rem;
-  padding: 1em .625em;
+  padding: 1em 0.625em;
 }
 input:focus,
 input:active,
@@ -223,17 +227,17 @@ textarea:active {
   box-shadow: none;
   border-radius: 50%;
   background: var(--main-accent-color);
-  width: .8125rem;
-  height: .8125rem;
-  top: .125rem;
-  left: .125rem;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  top: 0.125rem;
+  left: 0.125rem;
 }
 .radio span.box:hover::after {
   opacity: 0;
 }
 .radio span.label,
 .checkbox span.label {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 .radio-items .form-row label span:last-of-type {
   border-color: var(--border-color);
@@ -255,29 +259,29 @@ input[type="radio"]:checked {
   border: 2px solid var(--main-accent-color) !important;
 }
 input[type="radio"]:checked:after {
-  content: '';
+  content: "";
   box-shadow: none;
   border-radius: 50%;
   background: var(--main-accent-color);
-  width: .8125rem;
-  height: .8125rem;
-  top: .125rem;
-  left: .125rem;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  top: 0.125rem;
+  left: 0.125rem;
   position: absolute;
 }
 .checkbox span.box {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 .checkbox input:checked + span.box {
   background: var(--main-accent-color);
   border-color: var(--main-accent-color);
 }
 .checkbox span.box::after {
-  height: .25rem;
-  left: .25rem;
-  top: .3125rem;
+  height: 0.25rem;
+  left: 0.25rem;
+  top: 0.3125rem;
   transform: rotate(-46deg);
-  width: .625rem;
+  width: 0.625rem;
   box-shadow: none;
 }
 .checkbox-list {
@@ -291,7 +295,7 @@ input[type="checkbox"] {
   height: 1.3125rem;
   margin: 0;
   border: solid 1px var(--border-color);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   background-color: var(--input-background);
   appearance: none;
   -webkit-appearance: none;
@@ -301,16 +305,16 @@ input[type="checkbox"]:checked {
   background-color: var(--main-accent-color);
 }
 input[type="checkbox"]:checked:after {
-  content: '';
+  content: "";
   background: transparent;
   border: 2px solid #fff;
   border-right: none;
   border-top: none;
-  height: .25rem;
-  left: .25rem;
-  top: .3125rem;
+  height: 0.25rem;
+  left: 0.25rem;
+  top: 0.3125rem;
   transform: rotate(-46deg);
-  width: .625 rem;
+  width: 0.625 rem;
   display: block;
   position: absolute;
 }
@@ -322,7 +326,6 @@ label.select select option {
   color: var(--main-text-color);
 }
 /* End Panel and Form Inputs */
-
 
 /* Errors */
 body .alert {
@@ -340,14 +343,14 @@ body .alert.error {
   margin: 0 0 2rem 0;
   background: var(--error-background);
   box-shadow: none;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 body .alert .dismiss-button i {
   margin: 0;
 }
 .error {
-  font-size: .75rem;
-  margin: .5em 0;
+  font-size: 0.75rem;
+  margin: 0.5em 0;
 }
 label.error {
   color: var(--error-color);
@@ -362,11 +365,10 @@ input.error {
 }
 /* End Errors */
 
-
 /* Tooltip */
 .tooltip {
   background: var(--tooltip-background);
-  font-size: .75rem;
+  font-size: 0.75rem;
   color: var(--main-text-color);
   text-align: left;
 }
@@ -380,7 +382,6 @@ input.error {
   color: var(--main-accent-color) !important;
 }
 /* End Tooltip */
-
 
 table thead tr th {
   color: var(--main-text-color);
@@ -397,12 +398,12 @@ table thead tr {
   text-align: left;
 }
 .progress-bar {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--border-color);
   height: 1rem;
 }
 .progress-bar div {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background: var(--main-accent-color);
   height: 1rem;
 }
@@ -414,7 +415,7 @@ hr,
 }
 .hr-container div {
   color: #959595;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 .page-body > .row.center:last-of-type {
   width: calc(100% - 30px);
@@ -430,7 +431,8 @@ hr,
     flex-direction: column-reverse;
     align-items: center;
   }
-  .secondary-btn, main.page-body .row:last-of-type a {
+  .secondary-btn,
+  main.page-body .row:last-of-type a {
     margin-bottom: 1rem;
   }
   .page-body > .row.center:last-of-type > div {
@@ -742,14 +744,14 @@ hr,
   #change-pwd-complete .page-body > .row > .col-sm-8,
   #change-pwd-complete .page-body > .row > .col-md-6,
   #change-pwd-complete .page-body > .row > .col-lg-5,
-  #change-pwd-complete .page-body > .row > .col-xl-4  {
+  #change-pwd-complete .page-body > .row > .col-xl-4 {
     flex-basis: calc(100% - 30px);
     width: calc(100% - 30px);
     max-width: 33rem;
   }
   .panel {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -770,7 +772,6 @@ hr,
   }
 }
 /* End grid override */
-
 
 /* Cleaning up spacing */
 #verify-reg-required .link.blue-text,
@@ -796,7 +797,6 @@ hr,
   margin-bottom: 0;
 }
 /* End spacing */
-
 
 /* Other page specific styles */
 
@@ -874,8 +874,8 @@ hr,
   font-size: inherit !important;
 }
 #acct-index #edit-profile span:after {
-  content: 'Edit';
-  margin-left: .25em;
+  content: "Edit";
+  margin-left: 0.25em;
 }
 #acct-index .user-details > div {
   margin: 0;
@@ -904,7 +904,7 @@ hr,
   padding-right: 1.5rem;
 }
 #acct-index .panel:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -912,7 +912,7 @@ hr,
   width: 100%;
   height: 4rem;
   background-color: var(--main-accent-color);
-  border-radius: .625rem .625rem 0 0;
+  border-radius: 0.625rem 0.625rem 0 0;
 }
 #acct-index .user-details .avatar > div:last-of-type {
   color: var(--main-accent-color);
@@ -930,7 +930,7 @@ hr,
   padding: 0;
 }
 #acct-index .user-details .avatar > div:first-of-type img {
-  border: .625rem solid #ffffff;
+  border: 0.625rem solid #ffffff;
 }
 #acct-index .user-details > div:nth-of-type(2) > div {
   padding: 0;
@@ -943,7 +943,7 @@ hr,
 }
 #acct-index .user-details .panel-actions {
   top: 3.5rem;
-  right: .25rem;
+  right: 0.25rem;
 }
 @media only screen and (max-width: 450px) {
   #acct-index .user-details dl {
@@ -952,14 +952,14 @@ hr,
   #acct-index .user-details dt,
   #acct-index .user-details dd {
     width: 100%;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 }
 @media only screen and (min-width: 768px) {
   #acct-index .panel:before {
     width: 4rem;
     height: 100%;
-    border-radius: .625rem 0 0 .625rem;
+    border-radius: 0.625rem 0 0 0.625rem;
   }
   #acct-index .user-details {
     display: block;
@@ -975,19 +975,19 @@ hr,
   }
   #acct-index .user-details .avatar > div:first-of-type {
     position: absolute;
-    left: .75rem;
+    left: 0.75rem;
     top: calc(50% - 3.25rem);
     width: 6.5rem;
   }
   #acct-index .user-details .avatar > div:first-of-type img {
-    border-width: .5rem;
+    border-width: 0.5rem;
   }
   #acct-index .user-details .avatar > div:last-of-type {
     text-align: left;
   }
   #acct-index .user-details .panel-actions {
     top: -0.25rem;
-    right: .5rem;
+    right: 0.5rem;
   }
   #acct-index .page-body > .row.center:last-of-type {
     width: calc(83.33333333% - 30px);
@@ -1025,7 +1025,7 @@ hr,
     flex-basis: auto;
   }
   #acct-index .user-details .avatar {
-    left: -.25rem;
+    left: -0.25rem;
   }
   #acct-index .user-details .avatar > div:first-of-type {
     width: 8.75rem;
@@ -1034,19 +1034,18 @@ hr,
     left: 1.875rem;
   }
   #acct-index .user-details .avatar > div:first-of-type img {
-    border-width: .75rem;
+    border-width: 0.75rem;
   }
 }
 /*End Account Index page */
 
-
 /* specific page button/link overrides */
 #acct-2fa-enable .gray.button {
   color: var(--main-accent-color) !important;
-  padding: .5em .75em !important;
+  padding: 0.5em 0.75em !important;
   border: 1px solid var(--main-accent-color) !important;
-  border-radius: .25em;
-  font-size: .75rem !important;
+  border-radius: 0.25em;
+  font-size: 0.75rem !important;
   margin: 1rem auto;
   display: block;
   line-height: normal !important;
@@ -1073,10 +1072,10 @@ hr,
 #forgot-pwd-sent .panel main p:last-of-type a,
 #oauth-wait .panel main p:last-of-type a {
   color: var(--main-accent-color) !important;
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   border: 1px solid var(--main-accent-color) !important;
-  border-radius: .25em;
-  font-size: .75rem;
+  border-radius: 0.25em;
+  font-size: 0.75rem;
   margin: 1rem auto 0 auto;
   display: inline-block;
   line-height: normal;
@@ -1084,10 +1083,10 @@ hr,
 }
 #forgot-pwd-sent .panel main p:last-of-type a {
   color: var(--main-accent-color) !important;
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   border: 1px solid var(--main-accent-color) !important;
-  border-radius: .25em;
-  font-size: .75rem;
+  border-radius: 0.25em;
+  font-size: 0.75rem;
   margin: 0 auto;
   display: inline-block;
   line-height: normal;
@@ -1104,4 +1103,3 @@ hr,
   padding: 0;
 }
 /* End page specific buttons and links */
-
